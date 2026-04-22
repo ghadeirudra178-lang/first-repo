@@ -1,0 +1,11 @@
+.container{
+	height: 300px;
+	width: 500px;
+	background: pink;
+	text-align: center;
+	flex-direction: center;
+}
+.box1{
+	height: 200px;
+	
+}

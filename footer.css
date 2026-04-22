@@ -1,0 +1,57 @@
+.footer{
+	height: 400px;
+	display: flex;
+}
+.left{
+	height: 400px;
+	width: 50%;
+	display: flex;
+	background: gray;
+	flex-direction: column;
+}
+.message{
+	padding: 20px;
+}
+.message-input{
+	padding: 25px;
+	width: 70%;
+	border: none;
+}
+.send-btn{
+	padding: 25px 50px;
+}
+.quicklinks{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap:40px;
+}
+.quicklinks {
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
+.right{
+	height: 400px;
+	width: 50%;
+	background: gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.social{
+	display: flex;
+	gap: 40px;
+	padding: 40px 40px;
+}
+.social-img{
+	height: 40px;
+}
+.address{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+
+

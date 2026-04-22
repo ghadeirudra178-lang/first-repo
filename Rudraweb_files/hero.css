@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.hero{
+	height: 800px;
+	background: url('image/Wallpaper.bg.jpg');
+	background-size: cover ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.hero-head{
+	font-size: 90px;
+	color: whitesmoke;
+}
+.hero-subhead{
+	font-size: 60px;
+	color: whitesmoke;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.know-more{
+	padding: 20px;
+	border-radius: 30px;
+	border: none;
+}
+.let{
+	color: white;
+}

@@ -1,0 +1,29 @@
+.about{
+	text-align: center;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid red;
+}
+.about-heading{
+	font-size: 40px;
+
+}
+.container{
+	height: 400px;
+	display: flex;
+}
+.left{
+	height: 700px;
+	width: 50%;
+}
+.txtt{
+	font-size: 40px;
+	font-family: sans-serif;
+	color: black;
+	padding: 25px;
+}
+.right{
+	height: 700px;
+	width: 50%;
+}

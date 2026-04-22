@@ -1,0 +1,26 @@
+.send-btn{
+	padding: 20px 70px;
+	border: none;
+}
+.quicklinks{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.quicklinks a{
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+}
+
+.box1{
+	height: 400px;
+	width: 50%;
+	background: pink;
+}
+.box2{
+	height: 400px;
+	width: 50%;
+	background: darkblue;
+}
