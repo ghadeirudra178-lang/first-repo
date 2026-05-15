@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 203, 205);
+} 
+.card{
+    width: 330px;
+    height: 500px;
+    border: 2px solid rgb(226, 225, 233);
+    background-color: rgb(198, 17, 155);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgb(236, 3, 3);
+}
+.card:hover{
+    box-shadow: 10px 10px 25px 10px rgb(53, 26, 228);
+    transition: 0.5s;
+}
+.img-part{
+    height: 40%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    transition: all 0s;
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.text-part{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+    padding-bottom: 20px;
+    padding: 0px 10px;
+    
+}
+
+.qoute{
+    font-family: cursive;
+    font-size: 12px;
+}
+
+.desc{
+    font-size: 14px;
+    font-family: cursive;
+    text-align: center;
+
+}
+.button{
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: rgb(19, 204, 40);
+    transition: all 0s;  
+}
+
+.button:hover{
+    background-color: rgb(174, 163, 243);
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 2px rgb(174, 163, 243);
+}
+
+a {
+    text-decoration: none;
+    font-family: cursive;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <div class="img-part">
+                <img src="doromana.jpeg" alt=""  height="170px" width="170px">
+            </div>
+            <div class="text-part">
+              
+                <p class="desc"><b><i>Doraemon is one of the most iconic and beloved Japanese manga and anime franchises of all time.
+                    Created by the legendary manga artist duo Fujiko F. Fujio (Hiroshi Fujimoto and Motoo Abiko) in 1969, it has evolved into a global cultural phenomenon, particularly in Asia.</b></i></p>
+
+                <button class="button"><a href="https://en.wikipedia.org/wiki/Doraemon_(character)">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#003ea8",
+                    "surface-container-high": "#e7e8e9",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e1e3e4",
+                    "outline-variant": "#c3c6d7",
+                    "surface-container-low": "#f3f4f5",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "surface-tint": "#0053db",
+                    "on-background": "#191c1d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#474747",
+                    "error-container": "#ffdad6",
+                    "background": "#f8f9fa",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#e4e2e1",
+                    "tertiary": "#943700",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-container": "#bc4800",
+                    "inverse-surface": "#2e3132",
+                    "on-surface-variant": "#434655",
+                    "on-tertiary-fixed": "#360f00",
+                    "tertiary-fixed": "#ffdbcd",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "surface-dim": "#d9dadb",
+                    "inverse-primary": "#b4c5ff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-container": "#ffede6",
+                    "outline": "#737686",
+                    "on-primary-fixed": "#00174b",
+                    "on-primary-container": "#eeefff",
+                    "on-surface": "#191c1d",
+                    "surface-bright": "#f8f9fa",
+                    "surface-container": "#edeeef",
+                    "secondary-fixed": "#e4e2e1",
+                    "secondary": "#5f5e5e",
+                    "primary-container": "#2563eb",
+                    "primary": "#004ac6",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "on-secondary-container": "#656464",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "primary-fixed": "#dbe1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xxl": "4rem",
+                    "container-max": "1280px",
+                    "xs": "0.25rem",
+                    "xl": "2.5rem",
+                    "sm": "0.5rem",
+                    "md": "1rem",
+                    "lg": "1.5rem",
+                    "gutter": "1.5rem",
+                    "margin-mobile": "1rem",
+                    "margin-desktop": "5rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .shadow-level-1 { shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); }
+        .shadow-level-2 { shadow: 0px 10px 30px rgba(0, 0, 0, 0.08); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm h-16 flex items-center">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-gutter w-full">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">LUXE SHOP</h1>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#about">About Us</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#products">Products</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors duration-200" href="#testimonials">Testimonials</a>
+</div>
+<button class="flex items-center gap-xs text-primary font-label-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="hidden sm:inline">Cart</span>
+</button>
+</nav>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[707px] flex items-center overflow-hidden bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-2 max-w-container-max mx-auto px-gutter items-center gap-xl w-full py-xxl">
+<div class="z-10">
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-md">Elevate Your Style</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-lg">
+                        Discover a curated collection of premium essentials designed for the modern lifestyle. Quality meets minimalism in every piece we create.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<button class="bg-primary text-on-primary px-xl py-md font-label-md rounded-lg shadow-md hover:bg-on-primary-fixed-variant active:scale-95 transition-all">
+                            Shop Now
+                        </button>
+<button class="border border-secondary text-on-surface px-xl py-md font-label-md rounded-lg hover:bg-surface-container active:scale-95 transition-all">
+                            View Lookbook
+                        </button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Premium Fashion" class="w-full h-full object-cover" data-alt="A high-fashion editorial portrait of a sophisticated person wearing premium minimalist clothing in a bright, sun-drenched studio. The aesthetic is extremely clean with a focus on high-quality fabrics and neutral tones like beige and cream. The lighting is soft and airy, creating a professional corporate modern atmosphere that aligns with a luxury brand identity. High-end textures and spacious composition reflect elite lifestyle standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8QG97zw5mWSuhVZHrfpC62u5Zva2h5OTmhcb-uiJ-2qYQBK2W5Ty-otJi6PyKf1Wnr636naLfM41C-mNm904uTFLICm9q8yK9yWo9l71P3hxIPgegqNHLZThmrbVlT9gkh38qmGWAVcyax2ito6hO7xStc0ku7f-HWiITfHJuUfNDkoToLvhxTkz94d_Q9r6k3PYNF3nBobN_zRWu1XMHzQBmXVdHUFxZr8O1GUMQWB5PlwNBqARjoGQ9ad_s2QLcIuSeDrmX2lo"/>
+</div>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-xxl bg-surface" id="about">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-xl items-center">
+<div class="md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-lg">Our Story</h2>
+<div class="space-y-md">
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                At LUXE SHOP, we believe that true luxury lies in simplicity. Our journey began with a single vision: to create a destination for those who appreciate fine craftsmanship without the noise of fleeting trends.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Every item in our catalog is meticulously sourced and tested to ensure it meets our rigorous standards of quality. We don't just sell products; we curate experiences that enhance your daily life through superior design and functionality.
+                            </p>
+</div>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-md">
+<div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up shot of a minimalist luxury watch on a clean, white surface. The lighting is soft and ambient, highlighting the brushed metal textures and pristine glass. The color palette is restricted to silver, white, and subtle grey shadows, reflecting a professional and dependable brand image focused on quality craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNneDxX3rZTxfuQj__M70UdE4rm3DcJKDU_QkxpLpmVxIejmxOZjhPpZ96_6t_1g-rtml1wZPENeft9DtKey0fRZFYCCPWPhGwQZFAu3b3a10Rjc7947LZ-vpUfy798dXlDF_2STkzKS97MmB3UutKzAHsM4n-sPxoF3y9QvjKhsUU4rF4bOvMJfCtMsw5Jze5gRigkWizAJHXn07UPXzFjV6tqrg3pcd5wrKycw9Ijwb-_IwEveI_nxoGYV-J8UFXSyasEpg5Z0U"/>
+</div>
+<div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden mt-xl">
+<img class="w-full h-full object-cover" data-alt="A pair of sleek, modern designer sneakers displayed in an airy, minimalist showroom. The background is a soft grey gradient, emphasizing the product's clean lines and high-contrast red accents. The overall mood is sophisticated and energetic, capturing a premium e-commerce vibe with expansive negative space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMRh8_FanJFTgrk_8BKxLkRBz5cDDkcRcGjuTr8OMcuSjWhPaR3FdQegHEHWzFkI5Wr1ZieTZVI6H_VgrWvkraUWZiApbDprr6zOSR64m6XXswp_KDLLxAtrrmE-05z_eas5E6YC4V4KYLDjbgQSl5B8clQQP1NHyz7bnLq3bb_MBS147ojTr_IYrfrInnqawi4ioAKAPPoeXZGubgTetUHKYCG3ouphVUABrQXGXbf5cBPp241yJGltaUpMSu3dktO1h4Bh-PhQA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-xxl bg-surface-container-low" id="products">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xxl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Featured Products</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Selected essentials for the discerning collector.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-md bg-surface">
+<img class="w-full h-full object-cover" data-alt="A sophisticated black leather handbag resting on a minimalist marble pedestal. The setting is high-key and modern, with soft professional lighting that creates elegant highlights on the textured leather. The aesthetic is corporate luxury, using a monochromatic palette to convey dependability and premium quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBECrby6YYeuHxjQcDsnUM_fdwian9UwqHGThZaKvW9tszqN8_yjUaL0s-YwH3YI8ax1mACMgEUroIZq38YJ-bTb0JlmEwO6xMz_FlCx7NB82-tEVAveHMPPKdy4xK9P0MI37Q9CGm5Nn1Wi3MgCDe61-msk5-jM7_Baqj6shxGuQM9hK9rrLWqNSUXCsXxjivuY-iZniICpiEIfZU9A_fk-n-Ql5qvZWpyBMSH9Hhm04b7CPcsE52PMEL5x2EQzooIqWoAjLMiiCI"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-xs">Aura Handbag</h3>
+<p class="font-label-md text-label-md text-secondary mb-md">$249.00</p>
+<button class="w-full border border-on-surface py-sm font-label-md rounded hover:bg-on-surface hover:text-surface transition-all active:scale-95">Add to Cart</button>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-md bg-surface">
+<img class="w-full h-full object-crop" data-alt="A pristine white cotton shirt hanging in a bright, minimalist walk-in closet. The light is diffused and natural, highlighting the fine weave of the fabric. The atmosphere is serene and organized, representing a premium lifestyle brand that values simplicity and high-end apparel standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChfYSebYsA_eDMme_GhJI233orbn0-A6ZxWPL71wiJUCd74nhU5lFKrfHyuca8J7qjvArPgs5FKKinGKGfrLp2kT6fpa69PoIM5gJh1YOsJ3f8iivRLtD5kGKMPCDiEN74D2ZBBKFFSiQAKFb_Mg3hxmk4AIOyCFIvqWLwoahduIGCnO0DTeQRDyXA9Pe6v4qXLWPK7IE2ZgtkAeX-2jrOwEjbehUXYwixMEp148ToC0Itnqusjrs7Pp4qyX8s0WiF0QwkdEe09p8"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-xs">Essential Shirt</h3>
+<p class="font-label-md text-label-md text-secondary mb-md">$85.00</p>
+<button class="w-full border border-on-surface py-sm font-label-md rounded hover:bg-on-surface hover:text-surface transition-all active:scale-95">Add to Cart</button>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-md bg-surface">
+<img class="w-full h-full object-cover" data-alt="High-fidelity over-ear headphones in a sleek matte charcoal finish. The product is shot against a light grey background with professional studio lighting that emphasizes its ergonomic curves and metallic accents. The mood is modern, tech-focused, and premium, suggesting high-performance audio quality for a professional user." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9M22cXvrGX0u2Vxu-MJPWR1hrOnqwGqsB84pYkRp7PvJPRzpONjTvxFK9Fuba-E8uO4A-lUWCDNBDKxEHE0GKs23iStUiwJP48u4CrTGKcNnDmGivjUpK2zC7JVvfC38GSApPNgZsqKCgg0GN7QpKx1nkfqW3Ns_HRlyhBjbUo0rJfKfVBdX3KtXGF-9jgDnIYy_9YhEs7NcawIS2yIX4uv_yDL5A1DSn8IV27tWIBdqheA5ODJhjIjPYmQBqAVLmuT88LkKGJyY"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-xs">Sonic Pro X</h3>
+<p class="font-label-md text-label-md text-secondary mb-md">$320.00</p>
+<button class="w-full border border-on-surface py-sm font-label-md rounded hover:bg-on-surface hover:text-surface transition-all active:scale-95">Add to Cart</button>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest p-lg rounded-xl shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_10px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[4/5] rounded-lg overflow-hidden mb-md bg-surface">
+<img class="w-full h-full object-cover" data-alt="A minimalist luxury timepiece with a gold bezel and black leather strap. The watch is presented on a soft, dark velvet cushion within a bright, airy environment. Subtle lens flares and high-contrast lighting create a feeling of exclusivity and timeless elegance, perfectly aligning with a premium e-commerce design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb5M6C9LImS-ELSCdKMfoF4CWHaEVsuS44XGJAAn3tH3a98ziadRXdTEDqwfqa4a6v5KuHHX3ptI_ZMfefJr_TcrQ-lGdpihE3h42IfOzmfozM1Ps_1d-v8NtCXZB6WDztIDOOK8w021Y1qV5Rk7nj607RCxygjfH1mLrnWFV2cclSBIRFwqTp5CRjEsxvRooleWqbJr6wGcqQUL_jiB9GcgM6Tcp80dwZWjaJfaPn6NBNwaA5fVn2uCQ1BO6mYpCE99KznRElbDY"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-xs">Horizon Watch</h3>
+<p class="font-label-md text-label-md text-secondary mb-md">$550.00</p>
+<button class="w-full border border-on-surface py-sm font-label-md rounded hover:bg-on-surface hover:text-surface transition-all active:scale-95">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Feedback -->
+<section class="py-xxl bg-surface" id="testimonials">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-xxl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">What Our Customers Say</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-low p-xl rounded-xl">
+<div class="flex text-tertiary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-xl italic">
+                            "The attention to detail is remarkable. Every item I've purchased feels like a permanent addition to my wardrobe."
+                        </p>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">James Wilson</p>
+<p class="font-caption text-caption text-secondary">Verified Buyer</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-low p-xl rounded-xl">
+<div class="flex text-tertiary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-xl italic">
+                            "Finally, a brand that understands minimalism doesn't mean compromising on quality. Pure elegance."
+                        </p>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Elena Rodriguez</p>
+<p class="font-caption text-caption text-secondary">Design Consultant</p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-low p-xl rounded-xl">
+<div class="flex text-tertiary mb-md">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-xl italic">
+                            "Customer service was exceptional, and the shipping was surprisingly fast. I'm a customer for life."
+                        </p>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Marcus Chen</p>
+<p class="font-caption text-caption text-secondary">Architect</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-highest">
+<div class="flex flex-col md:flex-row justify-between items-center py-xl px-gutter max-w-container-max mx-auto">
+<div class="mb-lg md:mb-0">
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">LUXE SHOP</h2>
+<p class="font-caption text-caption text-on-surface-variant mt-xs">© 2024 Luxe Shop. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#about">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#products">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:underline hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="mt-lg md:mt-0 flex gap-md">
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary" data-icon="share">share</span>
+<span class="material-symbols-outlined text-secondary cursor-pointer hover:text-primary" data-icon="mail">mail</span>
+</div>
+</div>
+</footer>
+</body></html>

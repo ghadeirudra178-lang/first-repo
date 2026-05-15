@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Landing Page</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* body{
+      background:#e3e1e8;
+    } */
+
+    .hero{
+      width:100%;
+      height:100vh;
+      background:#203e48;
+      position:relative;
+      overflow:hidden;
+    }
+
+    nav{
+      width:70%;
+      margin:20px auto;
+      padding:15px 30px;
+      border-radius:8px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+    nav ul li a:hover{
+      color:#f5c542;
+    }
+
+    .content{
+      width:500px;
+      border:6px solid #fd0d0d;
+      padding:40px;
+      text-align:center;
+      color:rgb(244, 241, 241);
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+
+    .content h1{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+
+    .content h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .content p{
+      font-size:20px;
+      letter-spacing:2px;
+      color: white
+    }
+
+    .links{
+      text-decoration: none;
+      color: white;
+      types: none;
+    }
+
+
+    .buttons{
+      margin:35px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+    }
+
+    .btn{
+      padding:12px 30px;
+      border:none;
+      cursor:pointer;
+      font-size:14px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn1{
+      background:transparent;
+      border:2px solid #c98a6b;
+      color:white;
+    }
+
+    .btn1:hover{
+      background:#42c804;
+    }
+    .btn2:hover{
+      background:#82f507;
+   
+
+    
+   
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <li><a class="links" href="#">HOME</a></li>
+        <li><a class="links" href="#">PROFILE</a></li>
+        <li><a class="links" href="#">WORK EXPERIENCE</a></li>
+        <li><a class="links" href="#">SKILLS</a></li>
+        <li><a class="links" href="#">INTEREST</a></li>
+        <li><a class="links" href="#">PORTFOLIO</a></li>
+        <li><a class="links" href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- CENTER CONTENT -->
+    <div class="content">
+      <h1>HELLO!</h1>
+      <h2>I Am Rudra</h2>
+      <p>WEB & GRAPHIC DESIGNER</p>
+
+      <div class="buttons">
+        <button class="btn btn1">DOWNLOAD CV</button>
+        <button class="btn btn2">HIRE ME</button>
+      </div>
+    </div>
+         
+        
+  </section>
+
+</body>
+</html>
